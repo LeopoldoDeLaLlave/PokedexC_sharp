@@ -5,7 +5,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
-
+/*
+ * Autor: Javier de la Llave
+ * 
+ * Esta clase se encarga de realizar la 
+ */
 namespace PokedexC_sharp
 {
     class Conexion
@@ -16,6 +20,7 @@ namespace PokedexC_sharp
         {
             try
             {
+                //Nos conectamos a la base de datos
                 conexion = new MySqlConnection("Server = 192.168.182.137; Database = listapokemons; Uid = root; Pwd=; Port=3306");
             }
             catch (MySqlException e)
@@ -25,6 +30,7 @@ namespace PokedexC_sharp
             
         }
 
+        //Obtiene la fila del pokemon en la base de datos según su ID
         public DataTable getPokemonPorId(int id)
         {
             try

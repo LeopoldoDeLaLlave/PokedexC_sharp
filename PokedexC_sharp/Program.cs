@@ -16,7 +16,7 @@ namespace PokedexC_sharp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new VentanaPrincipal());
+            Application.Run(new VentanaInfo());
         }
     }
 }

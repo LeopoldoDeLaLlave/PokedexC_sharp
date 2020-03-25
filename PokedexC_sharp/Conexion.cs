@@ -50,5 +50,27 @@ namespace PokedexC_sharp
             }
         }
 
+        //Obtiene el ID de un pokemon por su nomre
+        public String getPokemonPorNombre(String nombre)
+        {
+            
+            try
+            {
+                conexion.Open();
+                MySqlCommand consulta =
+                    new MySqlCommand("SELECT id FROM pokemon WHERE LOWER(nombre) ='" + nombre + "'", conexion);
+                MySqlDataReader resultado = consulta.ExecuteReader();
+                DataTable pokemons = new DataTable();
+                pokemons.Load(resultado);
+                conexion.Close();
+                return pokemons.Rows[0]["id"].ToString();
+
+            }
+            catch (MySqlException e)
+            {
+                throw e;
+            }
+        }
+
     }
 }

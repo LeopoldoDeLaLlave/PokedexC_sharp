@@ -18,7 +18,7 @@ namespace PokedexC_sharp
         Conexion miConexion = new Conexion();
 
         DataTable misPokemons = new DataTable();
-        int idActual = 1;//El pokemon que estamos viendo
+        public int idActual = 1;//El pokemon que estamos viendo
 
         public VentanaInfo()
         {
@@ -59,8 +59,8 @@ namespace PokedexC_sharp
         }
 
 
-        //Obtiene la información de los pokemos que hay en la base de datos según el ID
-        private void infoPokemos()
+        //Obtiene la información de los pokemos que hay en la base de datos según el ID y los muestra en pantalla
+        public void infoPokemos()
         {
             misPokemons = miConexion.getPokemonPorId(idActual);
             labelNombre.Text = misPokemons.Rows[0]["nombre"].ToString();//Ponemos el nombre
@@ -98,7 +98,14 @@ namespace PokedexC_sharp
 
             borraEvoluciones();
 
-            //Se encarga de mostrar la línea evolutiva
+            pintarEvoluciones();
+
+
+        }
+
+        //Se encarga de mostrar la línea evolutiva   
+        private void pintarEvoluciones()
+        {
             try
             {
 
@@ -160,9 +167,10 @@ namespace PokedexC_sharp
             {
 
             }
-
         }
-
-
     }
+
+
+
+
 }

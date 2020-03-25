@@ -17,6 +17,7 @@ namespace PokedexC_sharp
             InitializeComponent();
         }
 
+        //Recibe el id y muestra el pokemon en otro form
         private void BuscaId_Click(object sender, EventArgs e)
         {
             try
@@ -31,13 +32,14 @@ namespace PokedexC_sharp
                 v.Show();
             }
             catch (Exception ex)
-            {
+            {//Si el id no es valido salta un aviso
                 DialogResult res = MessageBox.Show("ID no encontrado", "Información", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 textBoxID.Text = "";
             }
 
         }
 
+        //Recibe un nombre y muestra el pokemon en otro form
         private void buscaNombre_Click(object sender, EventArgs e)
         {
            
@@ -51,12 +53,22 @@ namespace PokedexC_sharp
                 v.Show();
             }
             catch (Exception ex)
-            {
+            {//Si el nombre no es valido salta un aviso
                 DialogResult res = MessageBox.Show("Nombre no encontrado", "Información", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 textBoxNombre.Text = "";
             }
 
 
+        }
+
+        //Muestra en otro form un pokemon aleatorio
+        private void bRandom_Click(object sender, EventArgs e)
+        {
+            VentanaInfo v = new VentanaInfo();
+            Random rand = new Random();
+            v.idActual = rand.Next(1,151);
+            v.infoPokemos();
+            v.Show();
         }
     }
 }

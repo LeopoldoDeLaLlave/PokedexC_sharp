@@ -168,6 +168,8 @@ namespace PokedexC_sharp
 
             }
         }
+
+
     }
 
 

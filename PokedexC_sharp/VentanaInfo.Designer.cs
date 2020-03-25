@@ -56,13 +56,13 @@
             this.lMov3 = new System.Windows.Forms.Label();
             this.lMov1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel1.SuspendLayout();
@@ -165,6 +165,7 @@
             // lTipo2
             // 
             this.lTipo2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lTipo2.ForeColor = System.Drawing.Color.Black;
             this.lTipo2.Location = new System.Drawing.Point(206, 16);
             this.lTipo2.Name = "lTipo2";
             this.lTipo2.Size = new System.Drawing.Size(71, 23);
@@ -174,6 +175,7 @@
             // lHabitat
             // 
             this.lHabitat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lHabitat.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lHabitat.Location = new System.Drawing.Point(119, 180);
             this.lHabitat.Name = "lHabitat";
             this.lHabitat.Size = new System.Drawing.Size(95, 23);
@@ -183,6 +185,7 @@
             // lEspecie
             // 
             this.lEspecie.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lEspecie.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lEspecie.Location = new System.Drawing.Point(119, 148);
             this.lEspecie.Name = "lEspecie";
             this.lEspecie.Size = new System.Drawing.Size(95, 23);
@@ -192,6 +195,7 @@
             // lHabilidad
             // 
             this.lHabilidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lHabilidad.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lHabilidad.Location = new System.Drawing.Point(119, 112);
             this.lHabilidad.Name = "lHabilidad";
             this.lHabilidad.Size = new System.Drawing.Size(95, 23);
@@ -201,6 +205,7 @@
             // lPeso
             // 
             this.lPeso.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lPeso.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lPeso.Location = new System.Drawing.Point(119, 80);
             this.lPeso.Name = "lPeso";
             this.lPeso.Size = new System.Drawing.Size(95, 23);
@@ -210,6 +215,7 @@
             // lAltura
             // 
             this.lAltura.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lAltura.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lAltura.Location = new System.Drawing.Point(119, 48);
             this.lAltura.Name = "lAltura";
             this.lAltura.Size = new System.Drawing.Size(95, 23);
@@ -219,6 +225,7 @@
             // lTipo1
             // 
             this.lTipo1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lTipo1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lTipo1.Location = new System.Drawing.Point(119, 16);
             this.lTipo1.Name = "lTipo1";
             this.lTipo1.Size = new System.Drawing.Size(57, 23);
@@ -228,6 +235,7 @@
             // labelHabitat
             // 
             this.labelHabitat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelHabitat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.labelHabitat.Location = new System.Drawing.Point(14, 180);
             this.labelHabitat.Name = "labelHabitat";
             this.labelHabitat.Size = new System.Drawing.Size(99, 23);
@@ -238,6 +246,7 @@
             // labelEspecie
             // 
             this.labelEspecie.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelEspecie.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.labelEspecie.Location = new System.Drawing.Point(14, 147);
             this.labelEspecie.Name = "labelEspecie";
             this.labelEspecie.Size = new System.Drawing.Size(99, 23);
@@ -248,6 +257,7 @@
             // labelHabilidad
             // 
             this.labelHabilidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelHabilidad.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.labelHabilidad.Location = new System.Drawing.Point(14, 112);
             this.labelHabilidad.Name = "labelHabilidad";
             this.labelHabilidad.Size = new System.Drawing.Size(99, 23);
@@ -258,6 +268,7 @@
             // labelPeso
             // 
             this.labelPeso.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPeso.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.labelPeso.Location = new System.Drawing.Point(14, 80);
             this.labelPeso.Name = "labelPeso";
             this.labelPeso.Size = new System.Drawing.Size(99, 23);
@@ -268,6 +279,7 @@
             // labelAltura
             // 
             this.labelAltura.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAltura.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.labelAltura.Location = new System.Drawing.Point(14, 48);
             this.labelAltura.Name = "labelAltura";
             this.labelAltura.Size = new System.Drawing.Size(99, 23);
@@ -278,6 +290,7 @@
             // labelTipo
             // 
             this.labelTipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTipo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.labelTipo.Location = new System.Drawing.Point(14, 16);
             this.labelTipo.Name = "labelTipo";
             this.labelTipo.Size = new System.Drawing.Size(99, 23);
@@ -301,6 +314,7 @@
             // lMov4
             // 
             this.lMov4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lMov4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lMov4.Location = new System.Drawing.Point(0, 183);
             this.lMov4.Name = "lMov4";
             this.lMov4.Size = new System.Drawing.Size(182, 23);
@@ -311,6 +325,7 @@
             // lMov2
             // 
             this.lMov2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lMov2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lMov2.Location = new System.Drawing.Point(0, 93);
             this.lMov2.Name = "lMov2";
             this.lMov2.Size = new System.Drawing.Size(182, 23);
@@ -321,6 +336,7 @@
             // lMov3
             // 
             this.lMov3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lMov3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lMov3.Location = new System.Drawing.Point(0, 140);
             this.lMov3.Name = "lMov3";
             this.lMov3.Size = new System.Drawing.Size(182, 23);
@@ -331,6 +347,7 @@
             // lMov1
             // 
             this.lMov1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lMov1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lMov1.Location = new System.Drawing.Point(0, 48);
             this.lMov1.Name = "lMov1";
             this.lMov1.Size = new System.Drawing.Size(185, 23);
@@ -341,6 +358,7 @@
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.label2.Location = new System.Drawing.Point(0, 16);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(185, 23);
@@ -348,19 +366,10 @@
             this.label2.Text = "Movimientos";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // richTextBox1
-            // 
-            this.richTextBox1.BackColor = System.Drawing.Color.Silver;
-            this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox1.Location = new System.Drawing.Point(34, 420);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(201, 137);
-            this.richTextBox1.TabIndex = 8;
-            this.richTextBox1.Text = "";
-            // 
             // label3
             // 
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.label3.Location = new System.Drawing.Point(34, 384);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(201, 33);
@@ -401,6 +410,7 @@
             // label4
             // 
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.label4.Location = new System.Drawing.Point(328, 384);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(500, 33);
@@ -411,12 +421,24 @@
             // label5
             // 
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.Location = new System.Drawing.Point(299, 594);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(312, 23);
             this.label5.TabIndex = 14;
             this.label5.Text = "© 2020 Javier de la Llave";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.BackColor = System.Drawing.Color.Silver;
+            this.richTextBox1.Enabled = false;
+            this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox1.Location = new System.Drawing.Point(34, 420);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(201, 137);
+            this.richTextBox1.TabIndex = 8;
+            this.richTextBox1.Text = "";
             // 
             // VentanaInfo
             // 
@@ -436,6 +458,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.bIzquierdo);
             this.Controls.Add(this.pictureBox2);
+            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "VentanaInfo";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -483,13 +506,13 @@
         private System.Windows.Forms.Label lMov3;
         private System.Windows.Forms.Label lMov1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.RichTextBox richTextBox1;
     }
 }
 

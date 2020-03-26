@@ -7,14 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+/*
+ * Autor: Javier de la Llave
+ * 
+ * Buscador de pokemons
+ */
 namespace PokedexC_sharp
 {
     public partial class Buscador : Form
     {
+        Conexion c = new Conexion();
         public Buscador()
         {
             InitializeComponent();
+            dataGridView1.DataSource = c.getTodos();
         }
 
         //Recibe el id y muestra el pokemon en otro form
@@ -30,6 +36,7 @@ namespace PokedexC_sharp
                 v.idActual = int.Parse(textBoxID.Text);
                 v.infoPokemos();
                 v.Show();
+                textBoxID.Text = "";//Dejamo el buscador de ID vacío
             }
             catch (Exception ex)
             {//Si el id no es valido salta un aviso
@@ -51,6 +58,7 @@ namespace PokedexC_sharp
                 v.idActual = int.Parse(c.getPokemonPorNombre(textBoxNombre.Text.ToLower()));
                 v.infoPokemos();
                 v.Show();
+                textBoxNombre.Text = "";//vacíamos la búsqueda
             }
             catch (Exception ex)
             {//Si el nombre no es valido salta un aviso
@@ -70,5 +78,7 @@ namespace PokedexC_sharp
             v.infoPokemos();
             v.Show();
         }
+
+
     }
 }

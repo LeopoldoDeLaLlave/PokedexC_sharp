@@ -9,7 +9,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+/*
+ * Autor; Javier de la Llave
+ * 
+ * Muestra la información del Pokemon
+ */
 namespace PokedexC_sharp
 {
     public partial class VentanaInfo : Form

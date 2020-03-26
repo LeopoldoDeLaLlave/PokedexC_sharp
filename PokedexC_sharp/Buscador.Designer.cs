@@ -37,8 +37,11 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.bRandom = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // textBoxID
@@ -53,7 +56,7 @@
             this.BuscaId.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BuscaId.Location = new System.Drawing.Point(255, 45);
             this.BuscaId.Name = "BuscaId";
-            this.BuscaId.Size = new System.Drawing.Size(131, 24);
+            this.BuscaId.Size = new System.Drawing.Size(157, 24);
             this.BuscaId.TabIndex = 1;
             this.BuscaId.Text = "Buscar ID";
             this.BuscaId.UseVisualStyleBackColor = true;
@@ -71,7 +74,7 @@
             this.buscaNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buscaNombre.Location = new System.Drawing.Point(255, 97);
             this.buscaNombre.Name = "buscaNombre";
-            this.buscaNombre.Size = new System.Drawing.Size(131, 24);
+            this.buscaNombre.Size = new System.Drawing.Size(157, 24);
             this.buscaNombre.TabIndex = 3;
             this.buscaNombre.Text = "Buscar Nombre";
             this.buscaNombre.UseVisualStyleBackColor = true;
@@ -114,19 +117,31 @@
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(237, 488);
+            this.label2.Location = new System.Drawing.Point(237, 720);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(312, 23);
             this.label2.TabIndex = 7;
             this.label2.Text = "© 2020 Javier de la Llave";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ControlDark;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(83, 470);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(638, 231);
+            this.dataGridView1.TabIndex = 8;
+            // 
             // Buscador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Red;
-            this.ClientSize = new System.Drawing.Size(800, 520);
+            this.ClientSize = new System.Drawing.Size(800, 778);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
@@ -136,6 +151,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -150,5 +166,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button bRandom;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }

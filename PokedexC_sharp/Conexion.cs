@@ -8,7 +8,7 @@ using MySql.Data.MySqlClient;
 /*
  * Autor: Javier de la Llave
  * 
- * Esta clase se encarga de realizar la 
+ * Esta clase se encarga de realizar la conexión con la base de datos
  */
 namespace PokedexC_sharp
 {
@@ -72,5 +72,28 @@ namespace PokedexC_sharp
             }
         }
 
-    }
+
+        public DataTable getTodos()
+        {
+            try
+            {
+                conexion.Open();
+                MySqlCommand consulta =
+                    new MySqlCommand("SELECT id AS ID, nombre AS Nombre, CONCAT(altura, ' m') AS Altura, CONCAT(peso,' kg') AS Peso, " +
+                    "especie AS Especie, habitat AS Habitat, CONCAT(tipo1, ' ',tipo2) AS Tipo, habilidad AS Habilidad, descripcion AS Descripcion, imagen AS Miniatura FROM pokemon", conexion);
+                MySqlDataReader resultado = consulta.ExecuteReader();
+                DataTable pokemons = new DataTable();
+                pokemons.Load(resultado);
+                conexion.Close();
+                return pokemons;
+            }
+            catch (MySqlException e)
+            {
+                throw e;
+            }
+        }
+        }
+   
+   
+ 
 }

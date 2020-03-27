@@ -21,6 +21,9 @@ namespace PokedexC_sharp
         {
             InitializeComponent();
             dataGridView1.DataSource = c.getTodos();
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.ColumnHeader;
+            dataGridView1.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.None;
+
         }
 
         //Recibe el id y muestra el pokemon en otro form
@@ -40,7 +43,7 @@ namespace PokedexC_sharp
             }
             catch (Exception ex)
             {//Si el id no es valido salta un aviso
-                DialogResult res = MessageBox.Show("ID no encontrado", "Información", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("ID no encontrado", "Información", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 textBoxID.Text = "";
             }
 
@@ -62,7 +65,7 @@ namespace PokedexC_sharp
             }
             catch (Exception ex)
             {//Si el nombre no es valido salta un aviso
-                DialogResult res = MessageBox.Show("Nombre no encontrado", "Información", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Nombre no encontrado", "Información", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 textBoxNombre.Text = "";
             }
 
@@ -74,11 +77,18 @@ namespace PokedexC_sharp
         {
             VentanaInfo v = new VentanaInfo();
             Random rand = new Random();
-            v.idActual = rand.Next(1,151);
+            v.idActual = rand.Next(1,152);//Genero un número aleatorio entre 1 y 151 que son los valores entre los que están comprendidos lod id's
             v.infoPokemos();
             v.Show();
         }
 
-
+        //Muestra en otro form el pokemon elegido en el datagridView1
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            VentanaInfo v = new VentanaInfo();
+            v.idActual = int.Parse(dataGridView1.Rows[e.RowIndex].Cells["id"].Value.ToString());
+            v.infoPokemos();
+            v.Show();
+        }
     }
 }
